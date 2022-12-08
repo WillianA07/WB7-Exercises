@@ -53,6 +53,7 @@ function addOptToSelect () {
 }
 
 function findStation() {
+    tblBody.innerHTML = ""
     for (let x of cities) {
         if (x.name == cityDpD.value) {
             fetch("https://api.weather.gov/points/" + x.latitude + "," + x.longitude)
@@ -62,9 +63,6 @@ function findStation() {
                     getWeather(forecastURL);
                 });
         }
-        // else if (cityDpD.value == "") {
-        //     resultTbl.innerHTML = "";
-        // }
     }
 }
 
@@ -95,8 +93,4 @@ function createTblBody (weather) {
 
     let c5 = row.insertCell(4);
     c5.innerHTML = weather.detailedForecast;
-}
-
-function clearTable () {
-
 }
