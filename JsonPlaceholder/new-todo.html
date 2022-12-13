@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New To Do</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">Index Page</a>
+        <a href="users.html">Users Page</a>
+        <a href="todo.html">To Do Page</a>
+        <a href="new-todo.html">New To Do</a>
+        <a href="edit-todo.html">Edit</a>
+    </header>
+
+    <main>
+
+        <label for="userId">User ID:</label>
+        <input type="text"  id="userId">
+
+        <label for="title">Title</label>
+        <input type="text" id="title">
+
+        <label for="completed"></label>
+        <select id="completed">
+            <option value="0">Please choose one</option>
+            <option value="1">True</option>
+            <option value="2">False</option>
+        </select>
+
+        <button type="button" id="btn">Add</button>
+
+        <div id="msgDiv">
+
+        </div>
+
+    </main>
+
+    <script src="scripts/newToDo.js"></script>
+</body>
+
+</html>
