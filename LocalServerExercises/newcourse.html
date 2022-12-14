@@ -15,13 +15,36 @@
 
     <header class="container">
         <a href="index.html">Home</a>
-        <a href="details.html">Details</a>
 
-        <h1 class="display-1">New Courses</h1>
+        <h1 class="display-1 text-center">New Courses</h1>
     </header>
 
     <main>
-        
+        <form>
+            <label class="form-label" for="">Department</label>
+            <input type="text" class="form-control" id="dept">
+
+            <label class="form-label" for="">Course Number</label>
+            <input type="text" class="form-control" id="courseNum">
+
+            <label class="form-label" for="">Course Name</label>
+            <input type="text" class="form-control" id="courseName">
+
+            <label class="form-label" for="">Instructor</label>
+            <input type="text" class="form-control" id="instructor">
+
+            <label class="form-label" for="">Start Date</label>
+            <input type="text" class="form-control" id="startDate">
+
+            <label class="form-label" for="">Course Length</label>
+            <input type="text" class="form-control" id="courseLength">
+
+            <button type="button" class="btn btn-info" id="addBtn">ADD</button>
+        </form>
+
+        <div id="msgDiv">
+
+        </div>
     </main>
 
     <script src="scripts/newcourse.js"></script>
